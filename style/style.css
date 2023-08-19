@@ -1,3 +1,6 @@
+body{
+    background-color: #e1e1e1;
+}
 .rizq{
     padding: 15px;
     border-radius: 5px;
@@ -8,4 +11,14 @@ nav{
  .who{
     /* border: red 2px solid; */
     width: 50%;
+}
+
+.Iam{
+    height: 60vh;
+}
+.text-body{
+    font-weight: 600;
+}
+.col-12.icons a {
+    margin-right: 3rem; 
 }
