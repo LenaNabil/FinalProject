@@ -1,5 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #e1e1e1;
+    height: 1500px;
 }
 .rizq{
     padding: 15px;
@@ -19,6 +26,26 @@ nav{
 .text-body{
     font-weight: 600;
 }
+i{
+    font-size: 20px;
+}
 .col-12.icons a {
     margin-right: 3rem; 
+}
+.test{
+    width: 80%;
+}
+.skills {
+    height: 40vh;
+}
+.skillHeader{
+    position: absolute;
+    top: 86%;
+    left: 10%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 10px;
 }
