@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+  --main-color: #10cab7;
+  --section-padding: 60px;
+}
+
+/* Start Global Rules */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* End Global Rules */
+
+
+/* Start About */
+
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) + 60px);
+}
+
+.about .container .about-contant {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about .container .about-contant .rec {
+  margin: 60px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #dddddd;
+}
+
+.about .container .about-contant .rec img {
+  max-width: 100%;
+}
+
+.about .about-contant .rec::after {
+  content: "";
+  border-bottom: 45px solid #0000ff;
+  position: absolute;
+  width: 220px;
+  top: 20px;
+  right: 55px;
+}
+
+.about .about-contant .rec::before {
+  content: "";
+  border-width: 28px;
+  border-style: solid;
+  border-color: transparent #0b0bfd transparent transparent;
+  position: absolute;
+  top: 37px;
+  right: 247px;
+  z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="about">
+        <div class="container">
+          <div class="about-contant">
+            <div class="rec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos voluptates et eius laboriosam, corporis est dolor ipsam similique voluptatum ducimus sapiente aperiam nisi porro consequuntur delectus voluptas doloribus aspernatur?
+
+            </div>
+
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
