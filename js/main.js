@@ -103,3 +103,24 @@ function displayImage(image) {
 
 // أول تحميل للصفحة، عرض كل الصور
 window.onload = () => filterImages('All');
+
+
+const sections = document.querySelectorAll('section');
+
+function handleScroll() {
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+      section.style.opacity = '1';
+      section.style.transform = 'translateY(0)';
+    } else {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(30px)';
+    }
+  });
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
