@@ -45,42 +45,61 @@ var bootInterval = setInterval(function () {
 }, 30);
 
 
-const buttonCategory1 = document.getElementById("buttonCategory1");
-const buttonCategory2 = document.getElementById("buttonCategory2");
-const buttonAll = document.getElementById("buttonAll");
-const imageContainer = document.querySelector(".image-container");
-const mainImage = document.getElementById("mainImage");
 
-const imagesByCategory = {
-  category1: ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg", "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"],
-  category2: ["https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg", "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg", "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"],
-};
 
-buttonCategory1.addEventListener("click", () => {
-  showImages(imagesByCategory.category1);
-});
 
-buttonCategory2.addEventListener("click", () => {
-  showImages(imagesByCategory.category2);
-});
+const images = [
+  {
+    category: "Web Design",
+    image: "../img/image2.jpg"
+  },
+  {
+    category: "Web Design",
+    image: "../img/image3.jpg"
+  },
+  {
+    category: "Web Design",
+    image: "../img/image4.jpg"
+  },
+  {
+    category: "Photography",
+    image: "../img/image5.jpg"
+  },
+  {
+    category: "Development",
+    image: "../img/image5.jpg"
+  },
+  {
+    category: "Development",
+    image: "../img/image5.jpg"
+  },
+];
 
-buttonAll.addEventListener("click", () => {
-  showImages(imagesByCategory.category1.concat(imagesByCategory.category2));
-});
+function filterImages(category) {
+  const portfolioContainer = document.querySelector('.portfolto');
+  portfolioContainer.innerHTML = '';
 
-function showImages(images) {
-  const imageElements = images.map(imageSrc => {
-    const img = document.createElement("img");
-    img.src = imageSrc;
-    img.style.maxWidth = "100%";
-    return img;
-  });
-
-  imageContainer.innerHTML = "";
-  imageElements.forEach(img => {
-    imageContainer.appendChild(img);
-  });
-  imageContainer.classList.add("active");
+  if (category === 'All') {
+    images.forEach(image => displayImage(image));
+  } else {
+    const filteredImages = images.filter(image => image.category === category);
+    filteredImages.forEach(image => displayImage(image));
+  }
 }
 
+function displayImage(image) {
+  const imgElement = document.createElement('img');
+  imgElement.src = image.image;
+  imgElement.alt = '';
+  imgElement.srcset = '';
 
+  const colDiv = document.createElement('div');
+  colDiv.classList.add('col-4');
+  colDiv.appendChild(imgElement);
+
+  const portfolioContainer = document.querySelector('.portfolto');
+  portfolioContainer.appendChild(colDiv);
+}
+
+// أول تحميل للصفحة، عرض كل الصور
+window.onload = () => filterImages('All');

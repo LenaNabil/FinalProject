@@ -9,6 +9,10 @@ body {
     height: 1500px;
 }
 
+.AllNave{
+    display: flex;
+}
+
 .rizq {
     padding: 15px;
     border-radius: 5px;
@@ -16,6 +20,21 @@ body {
 
 nav {
     text-align: center;
+}
+
+.downlod {
+    width: 17rem;
+    margin-left: 33px;
+}
+.downlod:hover{
+    background-color: #007bff;
+}
+.downlod:hover a{
+    color: white;
+}
+.downloadicon {
+    text-decoration: none;
+    color: black;
 }
 
 .who {
@@ -42,14 +61,29 @@ i {
     width: 80%;
 }
 
+.skill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.skill .col-3 {
+    width: 30%;
+}
+
+.skill .col-9 {
+    width: 50%;
+
+}
+
 .skills {
     height: 40vh;
 }
 
 .skillHeader {
     position: absolute;
-    top: 94%;
-    left: 10%;
+    top: 86%;
+    left: 18%;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -57,7 +91,17 @@ i {
     height: 35px;
     padding: 10px;
 }
-
+.PROFESSIONALHeader{
+    position: absolute;
+    top: 86%;
+    left: 57%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 10px;
+}
 .spinner-container {
     display: flex;
     justify-content: space-between;
@@ -83,17 +127,130 @@ i {
     margin-left: 22px;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
 
 }
 
-.flex .col-4{
+.flex .col-4 {
     width: 25%;
-    height: 50vh;
+    height: 39vh;
 }
-.Allimg{
+
+.Allimg {
     height: 130px;
     width: 130px;
+}
+
+.date {
+    position: absolute;
+    z-index: 2;
+    top: 3%;
+    left: -2%;
+    padding: 10px 80px;
+    font-weight: 600;
+}
+
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.wight {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 4.3rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+
+}
+
+.circle {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.interests {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interests .col-2 {
+    width: 8%;
+    height: 60px;
+    align-items: center;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog .col-6 {
+    width: 40%;
+}
+
+.img-blog {
+    height: 30vh;
+}
+
+.readMore {
+    width: 170px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    width: 80%;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+
+}
+.buttons button{
+    width: 20%;
+}
+.portfolto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolto .col-4 {
+    width: 30%;
+    margin-top: 15px;
+}
+
+.portfolto .col-4 img {
+    width: 300px;
+    height: 300px;
+}
+.portfolto .col-4 img:hover{
+    opacity: 0.6;
 }
