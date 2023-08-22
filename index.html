@@ -2,968 +2,967 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../style/style.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ <link rel="stylesheet" href="../style/style.css">
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
 
-    body {
-      background-color: #e1e1e1;
-      height: 1500px;
-    }
+  body {
+   background-color: #e1e1e1;
+   height: 1500px;
+  }
 
-    .AllNave {
-      display: flex;
-    }
+  .AllNave {
+   display: flex;
+  }
 
-    .rizq {
-      padding: 15px;
-      border-radius: 5px;
-    }
+  .rizq {
+   padding: 15px;
+   border-radius: 5px;
+  }
 
-    nav {
-      text-align: center;
-    }
+  nav {
+   text-align: center;
+  }
 
-    .downlod {
-      width: 17rem;
-      margin-left: 33px;
-    }
+  .downlod {
+   width: 17rem;
+   margin-left: 33px;
+  }
 
-    .downlod:hover {
-      background-color: #007bff;
-    }
+  .downlod:hover {
+   background-color: #007bff;
+  }
 
-    .downlod:hover a {
-      color: white;
-    }
+  .downlod:hover a {
+   color: white;
+  }
 
-    .downloadicon {
-      text-decoration: none;
-      color: black;
-    }
+  .downloadicon {
+   text-decoration: none;
+   color: black;
+  }
 
-    .who {
-      font-weight: 750;
-      width: 50%;
-    }
+  .who {
+   font-weight: 750;
+   width: 50%;
+  }
 
-    .Iam {
-      height: 60vh;
-    }
+  .Iam {
+   height: 60vh;
+  }
 
-    .text-body {
-      font-weight: 600;
-    }
+  .text-body {
+   font-weight: 600;
+  }
 
-    i {
-      font-size: 20px;
-    }
+  i {
+   font-size: 20px;
+  }
 
-    .col-12.icons a {
-      margin-right: 3rem;
-    }
+  .col-12.icons a {
+   margin-right: 3rem;
+  }
 
-    .test {
-      width: 80%;
-    }
+  .test {
+   width: 80%;
+  }
 
-    .skill {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: stretch;
-    }
+  .skill {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: stretch;
+  }
 
-    .skill .col-3 {
-      width: 30%;
-    }
+  .skill .col-3 {
+   width: 30%;
+  }
 
-    .skill .col-9 {
-      width: 50%;
+  .skill .col-9 {
+   width: 50%;
 
-    }
+  }
 
-    .skills {
-      height: 40vh;
-    }
+  .skills {
+   height: 40vh;
+  }
 
-    .skillHeader {
-      position: absolute;
-      top: 22%;
-      left: 14%;
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 35px;
-      padding: 10px;
-    }
+  .skillHeader {
+   position: absolute;
+   top: 22%;
+   left: 14%;
+   width: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;
+   padding: 10px;
+  }
 
-    .PROFESSIONALHeader {
-      position: absolute;
-      top: 22%;
-      left: 59%;
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 35px;
-      padding: 10px;
-    }
+  .PROFESSIONALHeader {
+   position: absolute;
+   top: 22%;
+   left: 59%;
+   width: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;
+   padding: 10px;
+  }
 
-    .spinner-container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-
-
-    .spinner {
-      width: 100px;
-      height: 100px;
-      border: 10px solid rgba(0, 0, 0, 0.3);
-      border-top-color: #007bff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 60px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .ss {
-      font-weight: bold;
-      font-size: 14px;
-      margin-left: 22px;
-    }
-
-    .flex {
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    .flex .col-4 {
-      width: 25%;
-      height: 39vh;
-    }
-
-    .Allimg {
-      height: 130px;
-      width: 130px;
-    }
-
-    .date {
-      position: absolute;
-      z-index: 2;
-      top: 3%;
-      left: -2%;
-      padding: 10px 80px;
-      font-weight: 600;
-    }
+  .spinner-container {
+   display: flex;
+   justify-content: space-between;
+  }
 
 
-    .pricing {
-      display: flex;
-      justify-content: center;
-      height: 60vh;
-    }
 
-    .col-4 {
-      width: 25%;
-    }
+  .spinner {
+   width: 100px;
+   height: 100px;
+   border: 10px solid rgba(0, 0, 0, 0.3);
+   border-top-color: #007bff;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 60px;
+   font-weight: bold;
+   font-size: 14px;
+  }
 
-    .wight {
-      font-weight: 600;
-      font-size: 20px;
-      margin-top: 4.3rem;
-    }
+  .ss {
+   font-weight: bold;
+   font-size: 14px;
+   margin-left: 22px;
+  }
 
-    .testimonials {
-      display: flex;
-      justify-content: space-evenly;
-      height: 50vh;
+  .flex {
+   display: flex;
+   justify-content: space-between;
 
-    }
+  }
 
-    .circle {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-    }
+  .flex .col-4 {
+   width: 25%;
+   height: 39vh;
+  }
 
-    .name {
-      font-size: 20px;
-    }
+  .Allimg {
+   height: 130px;
+   width: 130px;
+  }
 
-    .interests {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .interests .col-2 {
-      width: 8%;
-      height: 60px;
-      align-items: center;
-    }
-
-    .blog {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .blog .col-6 {
-      width: 40%;
-    }
-
-    .img-blog {
-      height: 30vh;
-    }
-
-    .readMore {
-      width: 170px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    form div {
-      width: 80%;
-
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-
-    }
-
-    .buttons button {
-      width: 20%;
-    }
-
-    .portfolto {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .portfolto .col-4 {
-      width: 30%;
-      margin-top: 15px;
-    }
-
-    .portfolto .col-4 img {
-      width: 300px;
-      height: 300px;
-    }
-
-    .portfolto .col-4 img:hover {
-      opacity: 0.6;
-    }
+  .date {
+   position: absolute;
+   z-index: 2;
+   top: 3%;
+   left: -2%;
+   padding: 10px 80px;
+   font-weight: 600;
+  }
 
 
-    section {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-  </style>
-  <style>
+  .pricing {
+   display: flex;
+   justify-content: center;
+   height: 60vh;
+  }
 
-  </style>
-  <title>Leens Rizq</title>
+  .col-4 {
+   width: 25%;
+  }
+
+  .wight {
+   font-weight: 600;
+   font-size: 20px;
+   margin-top: 4.3rem;
+  }
+
+  .testimonials {
+   display: flex;
+   justify-content: space-evenly;
+   height: 50vh;
+
+  }
+
+  .circle {
+   border-radius: 50%;
+   width: 180px;
+   height: 180px;
+  }
+
+  .name {
+   font-size: 20px;
+  }
+
+  .interests {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .interests .col-2 {
+   width: 8%;
+   height: 60px;
+   align-items: center;
+  }
+
+  .blog {
+   display: flex;
+   justify-content: space-evenly;
+  }
+
+  .blog .col-6 {
+   width: 40%;
+  }
+
+  .img-blog {
+   height: 30vh;
+  }
+
+  .readMore {
+   width: 170px;
+  }
+
+  form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  form div {
+   width: 80%;
+
+  }
+
+  .buttons {
+   display: flex;
+   justify-content: space-around;
+
+  }
+
+  .buttons button {
+   width: 20%;
+  }
+
+  .portfolto {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .portfolto .col-4 {
+   width: 30%;
+   margin-top: 15px;
+  }
+
+  .portfolto .col-4 img {
+   width: 300px;
+   height: 300px;
+  }
+
+  .portfolto .col-4 img:hover {
+   opacity: 0.6;
+  }
+
+
+  section {
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+ </style>
+ <style>
+
+ </style>
+ <title>Leens Rizq</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-light shadow fixed-top ">
-    <div class="container-fluid">
-      <a class="navbar-brand text-dark" href="#">leena <span class="bg-primary text-light rizq">Rizq</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#SKILLS">SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#EDUCATION">EDUCATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#PORTFOLIO">PORTFOLIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#PRICING">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#INTERESTS">INTERESTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#Blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="container mt-5 shadow Iam bg-light">
+ <nav class="navbar navbar-expand-sm bg-light shadow fixed-top ">
+  <div class="container-fluid">
+   <a class="navbar-brand text-dark" href="#">leena <span class="bg-primary text-light rizq">Rizq</span></a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ">
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#SKILLS">SKILLS</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#EDUCATION">EDUCATION</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#PORTFOLIO">PORTFOLIO</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#PRICING">PRICING</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#INTERESTS">INTERESTS</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#Blog">Blog</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="#Contact">Contact</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+ <section class="container mt-5 shadow Iam bg-light">
+  <div class="row">
+   <div class="col-3 ">
     <div class="row">
-      <div class="col-3 ">
-        <div class="row">
-          <div class="col-12 ">
-            <img src="https://2u.pw/IccST7A" alt="image" class="m-4  shadow">
-          </div>
-          <div class="col-12 shadow text-center downlod p-2 ">
-            <h5 class=""><span><i class="fa-solid fa-cloud-arrow-down"></i></span> <a href="../leena.pdf"
-                class="downloadicon" download>DOWNOLAD RESEME</a></h5>
-          </div>
-          <div class="col-12  text-center mt-3">
-            <p> <span><i class="fa-solid fa-check text-primary"></i></span> available Freelancer</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-9">
-        <div class="row">
-          <div class="col-12 m-4">
-            <h1 class="">Hi I^M <span class="text-primary text-uppercase"> LenaNabil</span></h1>
-            <small class="text-muted  mt-0"> web developer & web designer</p>
-          </div>
-          <div class="col-12">
-            <p class="who">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fugit in porro, non architecto
-              sint fugiat iste consequuntur commodi labore nihil temporibus suscipit sapiente, quas ipsam vel tempore.
-              Illo, velit! </p>
-          </div>
-          <div class="col-12">
-            <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td class="text-muted">Age:</td>
-                  <td class="text-body">19</td>
-                  <td class="text-muted">phone</td>
-                  <td class="text-body">+972 0599999</td>
-
-                </tr>
-                <tr>
-                  <td class="text-muted">Website </td>
-                  <td class="text-body">leena@example.com</td>
-                  <td class="text-muted">Email </td>
-                  <td class="text-body">leena@example.com </td>
-
-                </tr>
-                <tr>
-                  <td class="text-muted">Nataly </td>
-                  <td class="text-body">Palestinian</td>
-                  <td class="text-muted">Address </td>
-                  <td class="text-body">Address</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-12">
-            <p class="text-muted">Social Media Link</p>
-          </div>
-          <div class="col-12 icons">
-            <a class="border p-2 text-muted" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
-            <a class="border p-2 text-muted" href="https://twitter.com/?lang=ar"> <i
-                class="fa-brands fa-twitter"></i></a>
-            <a class="border p-2 text-muted" href="https://google.com"> <i class="fa-solid fa-g"></i></a>
-            <a class="border p-2 text-muted" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="border p-2 text-muted" href="https://www.pinterest.com/"> <i
-                class="fa-brands fa-pinterest"></i></a>
-            <a class="border p-2 text-muted" href="https://www.youtube.com/"> <i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
+     <div class="col-12 ">
+      <img src="https://2u.pw/IccST7A" alt="image" class="m-4  shadow" style="    width: 18rem;
+            height: 17rem;">
+     </div>
+     <div class="col-12 shadow text-center downlod p-2 ">
+      <h5 class=""><span><i class="fa-solid fa-cloud-arrow-down"></i></span> <a href="../leena.pdf" class="downloadicon"
+        download>DOWNOLAD RESEME</a></h5>
+     </div>
+     <div class="col-12  text-center mt-3">
+      <p> <span><i class="fa-solid fa-check text-primary"></i></span> available Freelancer</p>
+     </div>
     </div>
-
-  </section>
-  <section class="container mt-5" id="SKILLS">
-    <div class="row mt-5">
-      <div class="col-12">
-        <h1 class="text-center text-primary">SKILLS</h1>
-      </div>
-    </div>
-    <div class="container mt-5 ">
-      <div class="row skill">
-        <div class="col-3 shadow bg-light skills">
-          <div class="row p-3">
-            <h class="skillHeader text-light bg-primary">PROFESSIONAL SKILLS </h>
-            <div class="col-12 mt-3">
-              <p class="skill text-body">HTML</p>
-              <div class="progress" style="height:10px">
-                <div class="progress-bar" id="htmlProgress" style="width:0;"></div>
-              </div>
-            </div>
-            <div class="col-12 mt-2">
-              <P class="skill text-body">CSS</P>
-              <div class="progress" style="height:10px">
-                <div class="progress-bar" id="cssProgress" style="width:0%;"></div>
-              </div>
-            </div>
-            <div class="col-12 mt-2">
-              <p class="skill text-body">JAVASCRIPT</p>
-              <div class="progress" style="height:10px">
-                <div class="progress-bar" id="jsProgress" style="width:0%;"></div>
-              </div>
-            </div>
-            <div class="col-12 mt-2">
-              <p class="skill text-body">BOOTSTRAP</p>
-              <div class="progress" style="height:10px">
-                <div class="progress-bar" id="bootProgress" style="width:0%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 shadow bg-light  p-4 ">
-          <div class="row spinner-container">
-            <h class="PROFESSIONALHeader text-light bg-primary">PROFESSIONAL SKILLS </h>
-            <div class="col-4">
-              <div class="spinner" id="EnglishProgress">100%</div>
-              <br />
-              <p class="ss">English</p>
-            </div>
-            <div class="col-4">
-              <div class="spinner">80%</div>
-              <br />
-              <p class="ss">Creativity</p>
-            </div>
-            <div class="col-4">
-              <div class="spinner">70%</div>
-              <br />
-              <p class="ss">TeamWork </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> Photographer
-              </label>
-            </div>
-            <div class="col-6">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="Mobile"> Mobile App Desgin
-              </label>
-            </div>
-
-            <div class="col-6"> <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="Desgin"> Logo Desgin
-              </label></div>
-            <div class="col-6">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> 3D Animation
-              </label>
-            </div>
-            <div class="col-6">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="Mobile"> Audio Viedeo Editing
-              </label>
-            </div>
-
-            <div class="col-6"> <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="Desgin"> UX and UI Design
-              </label>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container mt-5" id="EDUCATION">
+   </div>
+   <div class="col-9">
     <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">EDUCATION</h1>
-      </div>
-    </div>
-    <div class="row mt-5 flex">
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
+     <div class="col-12 m-4">
+      <h1 class="">Hi I^M <span class="text-primary text-uppercase"> LenaNabil</span></h1>
+      <small class="text-muted  mt-0"> web developer & web designer</p>
+     </div>
+     <div class="col-12">
+      <p class="who">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fugit in porro, non architecto
+       sint fugiat iste consequuntur commodi labore nihil temporibus suscipit sapiente, quas ipsam vel tempore.
+       Illo, velit! </p>
+     </div>
+     <div class="col-12">
+      <table class="table table-borderless">
+       <tbody>
+        <tr>
+         <td class="text-muted">Age:</td>
+         <td class="text-body">19</td>
+         <td class="text-muted">phone</td>
+         <td class="text-body">+972 0599999</td>
 
-    </div>
-    <div class="row mt-5 flex">
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
-      <div class="col-4 card shadow p-3 ">
-        <div class="date bg-primary text-light">
-          2020-2022
-        </div>
-        <div class="card-body mt-5">
-          <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
-          <span> Company name</span>
-          <br>
-          <span><i class="fa-solid fa-file text-primary p-1"></i></span>
-          <span>Company name</span>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
-            corrupti possimus eius molestiae ex natus incidunt!
-          </div>
-        </div>
-      </div>
+        </tr>
+        <tr>
+         <td class="text-muted">Website </td>
+         <td class="text-body">leena@example.com</td>
+         <td class="text-muted">Email </td>
+         <td class="text-body">leena@example.com </td>
 
+        </tr>
+        <tr>
+         <td class="text-muted">Nataly </td>
+         <td class="text-body">Palestinian</td>
+         <td class="text-muted">Address </td>
+         <td class="text-body">Address</td>
+
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="col-12">
+      <p class="text-muted">Social Media Link</p>
+     </div>
+     <div class="col-12 icons">
+      <a class="border p-2 text-muted" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+      <a class="border p-2 text-muted" href="https://twitter.com/?lang=ar"> <i class="fa-brands fa-twitter"></i></a>
+      <a class="border p-2 text-muted" href="https://google.com"> <i class="fa-solid fa-g"></i></a>
+      <a class="border p-2 text-muted" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="border p-2 text-muted" href="https://www.pinterest.com/"> <i class="fa-brands fa-pinterest"></i></a>
+      <a class="border p-2 text-muted" href="https://www.youtube.com/"> <i class="fa-brands fa-youtube"></i></a>
+     </div>
     </div>
-  </section>
-  <section class="container mt-5" id="PORTFOLIO">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">PORTFOLIO</h1>
+   </div>
+  </div>
+
+ </section>
+ <section class="container mt-5" id="SKILLS">
+  <div class="row mt-5">
+   <div class="col-12">
+    <h1 class="text-center text-primary">SKILLS</h1>
+   </div>
+  </div>
+  <div class="container mt-5 ">
+   <div class="row skill">
+    <div class="col-3 shadow bg-light skills">
+     <div class="row p-3">
+      <h class="skillHeader text-light bg-primary">PROFESSIONAL SKILLS </h>
+      <div class="col-12 mt-3">
+       <p class="skill text-body">HTML</p>
+       <div class="progress" style="height:10px">
+        <div class="progress-bar" id="htmlProgress" style="width:0;"></div>
+       </div>
       </div>
+      <div class="col-12 mt-2">
+       <P class="skill text-body">CSS</P>
+       <div class="progress" style="height:10px">
+        <div class="progress-bar" id="cssProgress" style="width:0%;"></div>
+       </div>
+      </div>
+      <div class="col-12 mt-2">
+       <p class="skill text-body">JAVASCRIPT</p>
+       <div class="progress" style="height:10px">
+        <div class="progress-bar" id="jsProgress" style="width:0%;"></div>
+       </div>
+      </div>
+      <div class="col-12 mt-2">
+       <p class="skill text-body">BOOTSTRAP</p>
+       <div class="progress" style="height:10px">
+        <div class="progress-bar" id="bootProgress" style="width:0%;"></div>
+       </div>
+      </div>
+     </div>
     </div>
-    <div class="buttons mt-5">
-      <button class="btn btn-primary text-light" onclick="filterImages('All')">All</button>
-      <button class="btn btn-primary text-light" onclick="filterImages('Web Design')">Web Design</button>
-      <button class="btn btn-primary text-light" onclick="filterImages('Photography')">Photography</button>
-      <button class="btn btn-primary text-light" onclick="filterImages('Development')">Development</button>
-    </div>
-    <div class="portfolto mt-5">
+    <div class="col-9 shadow bg-light  p-4 ">
+     <div class="row spinner-container">
+      <h class="PROFESSIONALHeader text-light bg-primary">PROFESSIONAL SKILLS </h>
       <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+       <div class="spinner" id="EnglishProgress">100%</div>
+       <br />
+       <p class="ss">English</p>
       </div>
       <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+       <div class="spinner">80%</div>
+       <br />
+       <p class="ss">Creativity</p>
       </div>
       <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+       <div class="spinner">70%</div>
+       <br />
+       <p class="ss">TeamWork </p>
       </div>
-      <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+     </div>
+     <div class="row">
+      <div class="col-6">
+       <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Photographer
+       </label>
       </div>
-      <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
-      </div>
-      <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
-      </div>
-      <div class="col-4">
-        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+      <div class="col-6">
+       <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="Mobile"> Mobile App Desgin
+       </label>
       </div>
 
+      <div class="col-6"> <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="Desgin"> Logo Desgin
+       </label></div>
+      <div class="col-6">
+       <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> 3D Animation
+       </label>
+      </div>
+      <div class="col-6">
+       <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="Mobile"> Audio Viedeo Editing
+       </label>
+      </div>
+
+      <div class="col-6"> <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="Desgin"> UX and UI Design
+       </label>
+      </div>
+
+
+
+     </div>
     </div>
-  </section>
-  <section class="container mt-5" id="PRICING">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">PRICING</h1>
-      </div>
+   </div>
+  </div>
+ </section>
+ <section class="container mt-5" id="EDUCATION">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">EDUCATION</h1>
+   </div>
+  </div>
+  <div class="row mt-5 flex">
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
     </div>
-    <div class="pricing mt-3">
-      <div class="col-4 card shadow">
-        <p class="text-center">STARTER</p>
-        <p class="text-center bg-secondary text-light p-3 wight">49 /mo</p>
-        <div class="text-center">
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-        </div>
-        <p class="text-center bg-secondary text-light p-3  wight">By Now</p>
-      </div>
-      <div class="col-4 card shadow">
-        <p class="text-center">STARTER</p>
-        <p class="text-center bg-primary text-light p-3 wight">99 /mo</p>
-        <div class="text-center">
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-        </div>
-        <p class="text-center bg-primary text-light p-3 mb-0 wight">By Now</p>
-      </div>
-      <div class="col-4 card shadow">
-        <p class="text-center">STARTER</p>
-        <p class="text-center bg-secondary text-light p-3 wight">399 /mo</p>
-        <div class="text-center">
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-          <p>1TP Disk Space</p>
-        </div>
-        <p class="text-center bg-secondary text-light p-3 mb-0 wight">By Now</p>
-      </div>
-
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
     </div>
-  </section>
-  <section class="container mt-5" id="TESTIMONIALS">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">TESTIMONIALS </h1>
-      </div>
+   </div>
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
     </div>
-    <div class="testimonials mt-3">
-      <div class="col-4 card shadow">
-        <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
-        <p class="text-center mt-2 text-primary name">leena Nabile</p>
-        <p class="text-center mt-2">full stack developer</p>
-        <p class="text-center bg-primary text-light p-3 dec">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
-          inventore fugit veritatis possimus similique saepe earum?
-        </p>
-      </div>
-      <div class="col-4 card shadow">
-        <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
-        <p class="text-center mt-2 text-primary name">leena Nabile</p>
-        <p class="text-center mt-2">full stack developer</p>
-        <p class="text-center bg-primary text-light p-3 dec">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
-          inventore fugit veritatis possimus similique saepe earum?
-        </p>
-      </div>
-      <div class="col-4 card shadow">
-        <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
-        <p class="text-center mt-2 text-primary name">leena Nabile</p>
-        <p class="text-center mt-2">full stack developer</p>
-        <p class="text-center bg-primary text-light p-3 dec">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
-          inventore fugit veritatis possimus similique saepe earum?
-        </p>
-      </div>
-
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
     </div>
-  </section>
-  <section class="container mt-5" id="INTERESTS">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">INTERESTS </h1>
-        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Consectetur exercitationem perspiciatis dolore, a fugiat asperiores molestiae nostrum soluta voluptas incidunt
-          reprehenderit,
-          accusantium magni ducimus nam, voluptate nemo aut iusto adipisci. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
-          Est facere quam nobis ullam ratione, vel voluptas? Perferendis velit veritatis et necessitatibus,
-          eius ab aliquam corrupti, hic, provident assumenda esse voluptatem. </p>
-      </div>
-      <div class="interests">
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-        <div class="col-2 border bg-primary text-center shadow">
-          <i class="fa-solid fa-plane text-light"></i>
-          <br>
-          <p class="text-light ">Travle</p>
-        </div>
-
-
-      </div>
+   </div>
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
     </div>
-  </section>
-  <section class="container mt-5" id="Blog">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">Blog</h1>
-      </div>
-      <div class="blog">
-        <div class="col-6 card shadow p-3">
-          <img src="../img/image5.jpg" alt="" class="img-blog">
-          <p class="text-muted">photo / dev/drtes </p>
-          <h6>HERE GONNE AN ARIMJP BLOG TILTRU </h6>
-          <div class="mt-2 text-primary">
-            <span>
-              <i class="fa-solid fa-user"></i> leena
-            </span>
-            <span>
-              <i class="fa-solid fa-calendar-days"></i> 2020/7/8
-            </span>
-          </div>
-          <div class="mt-3 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum quaerat accusamus obcaecati corporis
-            laborum non modi deleniti minima alias?
-          </div>
-          <a href="" class="btn btn-primary mt-3 readMore text-center">ReadMore</a>
-        </div>
-        <div class="col-6 card shadow p-3">
-          <img src="../img/image5.jpg" alt="" class="img-blog">
-          <p class="text-muted">photo / dev/drtes </p>
-          <h6>HERE GONNE AN ARIMJP BLOG TILTRU </h6>
-          <div class="mt-2 text-primary">
-            <span>
-              <i class="fa-solid fa-user"></i> leena
-            </span>
-            <span>
-              <i class="fa-solid fa-calendar-days"></i> 2020/7/8
-            </span>
-          </div>
-          <div class="mt-3 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum quaerat accusamus obcaecati corporis
-            laborum non modi deleniti minima alias?
-          </div>
-          <a href="" class="btn btn-primary mt-3 readMore text-center">ReadMore</a>
-        </div>
-      </div>
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
     </div>
-  </section>
-  <section class="container mt-5" id="Contact">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center text-primary">Contact Us </h1>
-      </div>
+   </div>
+
+  </div>
+  <div class="row mt-5 flex">
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
     </div>
-    <form>
-      <div class="mb-3 mt-3">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-      <div class="mb-3">
-        <label for="Name">Name:</label>
-        <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
-      </div>
-      <div class="mb-3">
-        <label for="mes">Message:</label>
-        <textarea class="form-control" rows="5" id="mes" name="mes"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </section>
-  <footer class="container-fluid mt-5 bg-primary ">
-    <div class="row">
-      <div class="col-12">
-        <p class="text-center text-light mt-2">© 2023 Leena Nabile Abu Rizq. All rights reserved.</h1>
-      </div>
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
     </div>
-  </footer>
-  <script>
-    var htmlProgressBar = document.getElementById('htmlProgress');
-    var cssProgressBar = document.getElementById('cssProgress');
-    var jsProgressBar = document.getElementById('jsProgress');
-    var bootProgressBar = document.getElementById('bootProgress');
+   </div>
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
+    </div>
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
+    </div>
+   </div>
+   <div class="col-4 card shadow p-3 ">
+    <div class="date bg-primary text-light">
+     2020-2022
+    </div>
+    <div class="card-body mt-5">
+     <span><i class="fa-solid fa-location-dot text-primary p-1"></i></span>
+     <span> Company name</span>
+     <br>
+     <span><i class="fa-solid fa-file text-primary p-1"></i></span>
+     <span>Company name</span>
+     <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloribus tempore asperiores fuga
+      corrupti possimus eius molestiae ex natus incidunt!
+     </div>
+    </div>
+   </div>
+
+  </div>
+ </section>
+ <section class="container mt-5" id="PORTFOLIO">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">PORTFOLIO</h1>
+   </div>
+  </div>
+  <div class="buttons mt-5">
+   <button class="btn btn-primary text-light" onclick="filterImages('All')">All</button>
+   <button class="btn btn-primary text-light" onclick="filterImages('Web Design')">Web Design</button>
+   <button class="btn btn-primary text-light" onclick="filterImages('Photography')">Photography</button>
+   <button class="btn btn-primary text-light" onclick="filterImages('Development')">Development</button>
+  </div>
+  <div class="portfolto mt-5">
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+   <div class="col-4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" srcset="">
+   </div>
+
+  </div>
+ </section>
+ <section class="container mt-5" id="PRICING">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">PRICING</h1>
+   </div>
+  </div>
+  <div class="pricing mt-3">
+   <div class="col-4 card shadow">
+    <p class="text-center">STARTER</p>
+    <p class="text-center bg-secondary text-light p-3 wight">49 /mo</p>
+    <div class="text-center">
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+    </div>
+    <p class="text-center bg-secondary text-light p-3  wight">By Now</p>
+   </div>
+   <div class="col-4 card shadow">
+    <p class="text-center">STARTER</p>
+    <p class="text-center bg-primary text-light p-3 wight">99 /mo</p>
+    <div class="text-center">
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+    </div>
+    <p class="text-center bg-primary text-light p-3 mb-0 wight">By Now</p>
+   </div>
+   <div class="col-4 card shadow">
+    <p class="text-center">STARTER</p>
+    <p class="text-center bg-secondary text-light p-3 wight">399 /mo</p>
+    <div class="text-center">
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+     <p>1TP Disk Space</p>
+    </div>
+    <p class="text-center bg-secondary text-light p-3 mb-0 wight">By Now</p>
+   </div>
+
+  </div>
+ </section>
+ <section class="container mt-5" id="TESTIMONIALS">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">TESTIMONIALS </h1>
+   </div>
+  </div>
+  <div class="testimonials mt-3">
+   <div class="col-4 card shadow">
+    <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
+    <p class="text-center mt-2 text-primary name">leena Nabile</p>
+    <p class="text-center mt-2">full stack developer</p>
+    <p class="text-center bg-primary text-light p-3 dec">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
+     inventore fugit veritatis possimus similique saepe earum?
+    </p>
+   </div>
+   <div class="col-4 card shadow">
+    <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
+    <p class="text-center mt-2 text-primary name">leena Nabile</p>
+    <p class="text-center mt-2">full stack developer</p>
+    <p class="text-center bg-primary text-light p-3 dec">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
+     inventore fugit veritatis possimus similique saepe earum?
+    </p>
+   </div>
+   <div class="col-4 card shadow">
+    <img src="../img/image1.jpg" class="circle text-center mx-auto d-block p-3" alt="">
+    <p class="text-center mt-2 text-primary name">leena Nabile</p>
+    <p class="text-center mt-2">full stack developer</p>
+    <p class="text-center bg-primary text-light p-3 dec">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur voluptatum esse rerum
+     inventore fugit veritatis possimus similique saepe earum?
+    </p>
+   </div>
+
+  </div>
+ </section>
+ <section class="container mt-5" id="INTERESTS">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">INTERESTS </h1>
+    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Consectetur exercitationem perspiciatis dolore, a fugiat asperiores molestiae nostrum soluta voluptas incidunt
+     reprehenderit,
+     accusantium magni ducimus nam, voluptate nemo aut iusto adipisci. Lorem ipsum dolor sit amet consectetur
+     adipisicing elit.
+     Est facere quam nobis ullam ratione, vel voluptas? Perferendis velit veritatis et necessitatibus,
+     eius ab aliquam corrupti, hic, provident assumenda esse voluptatem. </p>
+   </div>
+   <div class="interests">
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+    <div class="col-2 border bg-primary text-center shadow">
+     <i class="fa-solid fa-plane text-light"></i>
+     <br>
+     <p class="text-light ">Travle</p>
+    </div>
+
+
+   </div>
+  </div>
+ </section>
+ <section class="container mt-5" id="Blog">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">Blog</h1>
+   </div>
+   <div class="blog">
+    <div class="col-6 card shadow p-3">
+     <img src="../img/image5.jpg" alt="" class="img-blog">
+     <p class="text-muted">photo / dev/drtes </p>
+     <h6>HERE GONNE AN ARIMJP BLOG TILTRU </h6>
+     <div class="mt-2 text-primary">
+      <span>
+       <i class="fa-solid fa-user"></i> leena
+      </span>
+      <span>
+       <i class="fa-solid fa-calendar-days"></i> 2020/7/8
+      </span>
+     </div>
+     <div class="mt-3 ">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum quaerat accusamus obcaecati corporis
+      laborum non modi deleniti minima alias?
+     </div>
+     <a href="" class="btn btn-primary mt-3 readMore text-center">ReadMore</a>
+    </div>
+    <div class="col-6 card shadow p-3">
+     <img src="../img/image5.jpg" alt="" class="img-blog">
+     <p class="text-muted">photo / dev/drtes </p>
+     <h6>HERE GONNE AN ARIMJP BLOG TILTRU </h6>
+     <div class="mt-2 text-primary">
+      <span>
+       <i class="fa-solid fa-user"></i> leena
+      </span>
+      <span>
+       <i class="fa-solid fa-calendar-days"></i> 2020/7/8
+      </span>
+     </div>
+     <div class="mt-3 ">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum quaerat accusamus obcaecati corporis
+      laborum non modi deleniti minima alias?
+     </div>
+     <a href="" class="btn btn-primary mt-3 readMore text-center">ReadMore</a>
+    </div>
+   </div>
+  </div>
+ </section>
+ <section class="container mt-5" id="Contact">
+  <div class="row">
+   <div class="col-12">
+    <h1 class="text-center text-primary">Contact Us </h1>
+   </div>
+  </div>
+  <form>
+   <div class="mb-3 mt-3">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+   </div>
+   <div class="mb-3">
+    <label for="Name">Name:</label>
+    <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+   </div>
+   <div class="mb-3">
+    <label for="mes">Message:</label>
+    <textarea class="form-control" rows="5" id="mes" name="mes"></textarea>
+   </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+ </section>
+ <footer class="container-fluid mt-5 bg-primary ">
+  <div class="row">
+   <div class="col-12">
+    <p class="text-center text-light mt-2">© 2023 Leena Nabile Abu Rizq. All rights reserved.</h1>
+   </div>
+  </div>
+ </footer>
+ <script>
+  var htmlProgressBar = document.getElementById('htmlProgress');
+  var cssProgressBar = document.getElementById('cssProgress');
+  var jsProgressBar = document.getElementById('jsProgress');
+  var bootProgressBar = document.getElementById('bootProgress');
 
 
 
-    var htmlValue = 0;
-    var cssValue = 0;
-    var jsValue = 0;
-    var bootValue = 0;
+  var htmlValue = 0;
+  var cssValue = 0;
+  var jsValue = 0;
+  var bootValue = 0;
 
 
 
-    var htmlInterval = setInterval(function () {
-      if (htmlValue >= 90) {
-        clearInterval(htmlInterval);
-      }
-      htmlValue += 1;
-      htmlProgressBar.style.width = htmlValue + '%';
-    }, 30);
+  var htmlInterval = setInterval(function () {
+   if (htmlValue >= 90) {
+    clearInterval(htmlInterval);
+   }
+   htmlValue += 1;
+   htmlProgressBar.style.width = htmlValue + '%';
+  }, 30);
 
-    var cssInterval = setInterval(function () {
-      if (cssValue >= 80) {
-        clearInterval(cssInterval);
-      }
-      cssValue += 1;
-      cssProgressBar.style.width = cssValue + '%';
-    }, 30);
+  var cssInterval = setInterval(function () {
+   if (cssValue >= 80) {
+    clearInterval(cssInterval);
+   }
+   cssValue += 1;
+   cssProgressBar.style.width = cssValue + '%';
+  }, 30);
 
-    var jsInterval = setInterval(function () {
-      if (jsValue >= 80) {
-        clearInterval(jsInterval);
-      }
-      jsValue += 1;
-      jsProgressBar.style.width = jsValue + '%';
-    }, 30);
+  var jsInterval = setInterval(function () {
+   if (jsValue >= 80) {
+    clearInterval(jsInterval);
+   }
+   jsValue += 1;
+   jsProgressBar.style.width = jsValue + '%';
+  }, 30);
 
-    var bootInterval = setInterval(function () {
-      if (bootValue >= 80) {
-        clearInterval(bootInterval);
-      }
-      bootValue += 1;
-      bootProgressBar.style.width = bootValue + '%';
-    }, 30);
-
-
+  var bootInterval = setInterval(function () {
+   if (bootValue >= 80) {
+    clearInterval(bootInterval);
+   }
+   bootValue += 1;
+   bootProgressBar.style.width = bootValue + '%';
+  }, 30);
 
 
 
-    const images = [
-      {
-        category: "Web Design",
-        image: "https://2u.pw/9JwHYEk"
-      },
-      {
-        category: "Web Design",
-        image: "https://2u.pw/EmiYhpD"
-      },
-      {
-        category: "Web Design",
-        image: "https://2u.pw/wvA8fsP"
-      },
-      {
-        category: "Photography",
-        image: "https://2u.pw/BevvYRc"
-      },
-      {
-        category: "Development",
-        image: "https://2u.pw/BevvYRc"
-      },
-      {
-        category: "Development",
-        image: "https://2u.pw/BevvYRc"
-      },
-    ];
 
-    function filterImages(category) {
-      const portfolioContainer = document.querySelector('.portfolto');
-      portfolioContainer.innerHTML = '';
 
-      if (category === 'All') {
-        images.forEach(image => displayImage(image));
-      } else {
-        const filteredImages = images.filter(image => image.category === category);
-        filteredImages.forEach(image => displayImage(image));
-      }
+  const images = [
+   {
+    category: "Web Design",
+    image: "https://2u.pw/9JwHYEk"
+   },
+   {
+    category: "Web Design",
+    image: "https://2u.pw/EmiYhpD"
+   },
+   {
+    category: "Web Design",
+    image: "https://2u.pw/wvA8fsP"
+   },
+   {
+    category: "Photography",
+    image: "https://2u.pw/BevvYRc"
+   },
+   {
+    category: "Development",
+    image: "https://2u.pw/BevvYRc"
+   },
+   {
+    category: "Development",
+    image: "https://2u.pw/BevvYRc"
+   },
+  ];
+
+  function filterImages(category) {
+   const portfolioContainer = document.querySelector('.portfolto');
+   portfolioContainer.innerHTML = '';
+
+   if (category === 'All') {
+    images.forEach(image => displayImage(image));
+   } else {
+    const filteredImages = images.filter(image => image.category === category);
+    filteredImages.forEach(image => displayImage(image));
+   }
+  }
+
+  function displayImage(image) {
+   const imgElement = document.createElement('img');
+   imgElement.src = image.image;
+   imgElement.alt = '';
+   imgElement.srcset = '';
+
+   const colDiv = document.createElement('div');
+   colDiv.classList.add('col-4');
+   colDiv.appendChild(imgElement);
+
+   const portfolioContainer = document.querySelector('.portfolto');
+   portfolioContainer.appendChild(colDiv);
+  }
+
+  window.onload = () => filterImages('All');
+
+
+  const sections = document.querySelectorAll('section');
+
+  function handleScroll() {
+   sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+     section.style.opacity = '1';
+     section.style.transform = 'translateY(0)';
+    } else {
+     section.style.opacity = '0';
+     section.style.transform = 'translateY(30px)';
     }
+   });
+  }
 
-    function displayImage(image) {
-      const imgElement = document.createElement('img');
-      imgElement.src = image.image;
-      imgElement.alt = '';
-      imgElement.srcset = '';
-
-      const colDiv = document.createElement('div');
-      colDiv.classList.add('col-4');
-      colDiv.appendChild(imgElement);
-
-      const portfolioContainer = document.querySelector('.portfolto');
-      portfolioContainer.appendChild(colDiv);
-    }
-
-    window.onload = () => filterImages('All');
-
-
-    const sections = document.querySelectorAll('section');
-
-    function handleScroll() {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-        if (isVisible) {
-          section.style.opacity = '1';
-          section.style.transform = 'translateY(0)';
-        } else {
-          section.style.opacity = '0';
-          section.style.transform = 'translateY(30px)';
-        }
-      });
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('load', handleScroll);
-  </script>
-  <script src="https://kit.fontawesome.com/494478277d.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll);
+ </script>
+ <script src="https://kit.fontawesome.com/494478277d.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
